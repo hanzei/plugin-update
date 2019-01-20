@@ -1,0 +1,26 @@
+{
+    "id": "com.github.hanzei.plugin-update",
+    "name": "Update Plugin",
+    "description": "Display notifications about plugin updates",
+    "version": "0.1.0",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "darwin-amd64": "server/dist/plugin-darwin-amd64",
+            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        }
+    },
+    "settings_schema": {
+        "footer": "TODO",
+        "settings": [{
+            "key": "Username",
+            "display_name": "User",
+            "type": "username",
+            "help_text": "Select the username of the user that the plugin inform about new updates on plugins."
+          }
+        ]
+    },
+    "props": {
+        "repository": "https://github.com/hanzei/plugin-update"
+    }
+}
